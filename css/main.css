@@ -1,0 +1,100 @@
+body{
+	background-color: #f3f3f5;
+	align-content: center;
+}
+.container{
+	width: 80%;
+  	margin:auto;
+  	overflow:hidden;	
+  	
+}
+#headerflex{
+	display: flex;
+	width: 100%;
+}
+
+#logo{
+	color: #000000;
+	font-family: Helvetica;
+	margin: 0;
+	width: 30%;
+	padding-right: 60px;
+	
+}
+
+header {
+	padding-top: 20px;
+	width: 100%;
+	background: white;
+	height: 100px;
+	
+}
+
+.home_icon ul{
+	padding:0px;
+	margin: 0px;
+	width: 30%;
+}
+.home_icon li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+#accounticon{
+	width: 40px;
+}
+#bagicon{
+	width: 30px;
+}
+.search{
+	width: 40%;
+}
+.search input{
+	padding:4px;
+	padding-right: 0px;
+  	height:25px;
+  	width:30%;
+
+}
+.search button{
+  	height:36px;
+  	width:9%;
+  	padding: 0px;
+  	margin: 0px;
+  	border: 0;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+nav li{
+  float:left;
+  display:inline;
+  padding: 10px 20px 10px 20px;
+}
+nav{
+	height: 40px;
+	width: 100%;
+	background: #5D6D7E;
+	color: white;
+	border-top: #f3f3f5 2px solid;
+}
+#m{
+	border-right: #f3f3f5 1px solid;
+	text-align: center;
+	width: 48%;
+}
+#w{
+	border-left: #f3f3f5 1px solid;
+	text-align: center;
+	width: 45%;
+}
+/*showcase*/
+#showcase img{
+	padding-left: 200px;
+	height: 400px;
+	width: 900px;
+}
+#showcase{
+		align-content: center;
+}
