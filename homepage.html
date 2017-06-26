@@ -2,41 +2,20 @@
 <html>
 <head>
 	<title>QUFIT | Wellcome</title>
-	<link rel="stylesheet" href="css/jquery.bxSlider.css">
 	<link rel="stylesheet" type="text/css" href="css/mainstyle.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
-	<header>
-		<div class="head_container">
-			<span id="logo">QUFIT</span>
-				
-			<span id="menu">
-				<li id="men-list"><a id="men" href="#">men</a>
-					<div id="men-menu-sub" class="menu-sub">coming soon..</div>
-				</li>
-				<li id="women-list"><a id="women" href="#">women</a>
-					<div id="women-menu-sub" class="menu-sub">coming soon..</div>
-				</li>
-			</span>
-			
-			
-			<span class="search_bar">
-				<form id="search_form"  name="search_bar_form">
-					<input id="search_input" type="text" name="search_input" placeholder="search brands.....">
-					<button id="searchicon" type="submit"><img src="img/searchicon.svg"></button>
-				</form>
-			</span>	
+	<div id="header"></div>
 
-			<span id="accounticon"><img src="img/accounticon.svg"></span>
-			<span id="bagicon"><img src="img/bagicon.svg"></span>
-			
-			
-		</div>
-	</header>
-
+	<script >
+		$(function(){
+			$("#header").load("mainheader.html");
+		});
+	</script>
 <!--Section Showcase============================================================================================================-->
 
 	<section class="showcase">
