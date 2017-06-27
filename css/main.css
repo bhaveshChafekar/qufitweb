@@ -5,7 +5,7 @@ body{
 .container{
 	width: 80%;
   	margin:auto;
-  	overflow:hidden;	
+  	overflow:hidden;
   	
 }
 #headerflex{
@@ -25,7 +25,7 @@ body{
 header {
 	padding-top: 20px;
 	width: 100%;
-	background: white;
+	background: #5D6D7E;
 	height: 100px;
 	
 }
@@ -33,15 +33,15 @@ header {
 .home_icon ul{
 	padding:0px;
 	margin: 0px;
-	width: 30%;
+	width: 60%;
 }
-.home_icon li{
-  float:left;
-  display:inline;
-  padding: 0 20px 0 20px;
+.home_icon ul li{
+	float:left;
+  	display: inline-block;
+  	padding: 0px 20px 0px 20px;
 }
 #accounticon{
-	width: 40px;
+	width: 30px;
 }
 #bagicon{
 	width: 30px;
@@ -53,7 +53,7 @@ header {
 	padding:4px;
 	padding-right: 0px;
   	height:25px;
-  	width:30%;
+  	width: 50%;
 
 }
 .search button{
@@ -69,8 +69,8 @@ ul{
 }
 nav li{
   float:left;
-  display:inline;
-  padding: 10px 20px 10px 20px;
+  display:inline-block;
+  padding: 0px 20px 0px 20px;
 }
 nav{
 	height: 40px;
@@ -96,5 +96,14 @@ nav{
 	width: 900px;
 }
 #showcase{
-		align-content: center;
+	align-content: center;
+}
+/*boxes*/
+#boxes .box{
+	float: left;
+}
+
+#boxes .box img{
+	height: 20px;
+	width:40px;
 }
