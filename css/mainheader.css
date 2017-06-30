@@ -2,6 +2,12 @@
 
 *{
 	box-sizing: border-box;
+
+}
+
+body{
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -10,7 +16,7 @@
 
 header{
 	width: 100%;
-	height: 95px;
+	height: 89px;
 	background: white;
 	margin: 0;
 	padding: 0;
@@ -21,31 +27,29 @@ header{
 }
 
 .head_container{
-	width: 98%;
+	width: 100%;
 	height: 100%;
 	display: flex;
-	margin: 0px auto;
-	padding: 0px 0 0 0;
+	margin: 0px 0;
+	padding: 6px 10px;
 }
 
 #logo{
 	font-size: 30px;
-	width: 30%;
+	width: auto;
 	margin: 0;
-	padding: 10px 15px 0 13px;
+	padding: 0px 10px 0 0px;
 	color: black;
-	z-index: 1;
 
 }
 
 span#menu{
-	width: 50%;
+	width: auto;
 	height: 100%;
 	margin: 0;
-	padding: 20px 5px 0 10px;
-	z-index: 100;
+	padding: 5px 0px 0 0px;
 	display: flex;
-
+	text-align: left;
 }
 
 #menu li{
@@ -58,8 +62,8 @@ span#menu{
 
 #menu a{
 	text-decoration: none;
-	padding: 8px 8px 0px 10px;
-	font-size: 18px;
+	padding: 0px 0px 0px 0px;
+	font-size: 22px;
 	position: relative;
 	font-family: 'Ubuntu', sans-serif;
 }
@@ -121,10 +125,12 @@ span#menu{
 	width: 100vw;
 	height: 50vh;
 	background: white;
-	margin: 7px 0 0 0;
+	margin: 0px 0 0 0;
 	left: 0;
-	font-size: 80px;
+	top: 45px;
+	font-size: 40px;
 	text-align: center;
+	z-index: 100;
 }
 
 #men-menu-sub{
@@ -148,23 +154,24 @@ span#menu{
 
 .search_bar{
 	position: absolute;
-	z-index: 1;
 	width: 100%;
-	margin: 0;
-	padding: 35px 0 0 0px;
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 10px;
+	left: 0;
+	bottom: 10px;
 }
 
 #search_form{
 	width: 100%;
 	display: flex;
-	padding: 13.5px 0 0 0;
+	padding: 0px 0 0 0;
 }
 
 #search_input{
 	width: 100%;
-	height: 35px;
+	height: 30px;
 	overflow: hidden;
-	transform: translateX(12px);
+	transform: translateX(0px);
 }
 
 #search_form input[type="text"]{
@@ -173,44 +180,52 @@ span#menu{
 	border-radius: 22px;
 	outline: 0;
 	background: #f3f3f5;
-	font-size: 18px;
+	font-size: 12px;
+	font-color:gray;
 }
 
 #searchicon{
 	margin-top: 3px;  
-	width: 35px;
-	height: 35px;
+	width: 0;
+	height: 30px;
 	transform: translateX(-25px);
 	cursor: pointer;
 	background: none;
 	border: 0;
 }
 #searchicon img{
-	width: 18px;
+	width: 13px;
 }
 
 span#accounticon{
-	width: 23%;
+	display: block;
+	width: auto;
 	margin: 0;
-	padding: 8px 0 10px 0px;
+	padding: 5px 0 0px 0px;
 	text-align: right;
-	z-index: 1;
+	height: 50%;
+	position: absolute;
+	right: 52px;
 
 }
 #accounticon img{
-	width: 30px;
-	padding-left: 2px ;
+	width: 23px;
+	padding-left: 0px ;
 }
 
+
+
 span#bagicon{
-	width: 15%;
+	display: block;
+	width: auto;
 	margin: 0;
-	padding: 5px 6px 10px 0px;
-	text-align: right;
-	z-index: 1;
+	height: 50%;
+	padding: 6px 0px 0px 5px;
+	right: 15px;
+	position: absolute;
 }
 #bagicon img{
-	width: 34px;
+	width: 22px;
 }
 
 /*Header over======================================================================================*/
