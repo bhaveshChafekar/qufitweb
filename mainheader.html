@@ -30,9 +30,39 @@
 			</span>	
 
 			<span id="accounticon"><img src="img/accounticon.png"></span>
-			<span id="bagicon"><img src="img/bagicon.png"></span>	
+			<span class="bagicon"><img src="img/bagicon.png"></span>	
 			
 		</div>
+
+		<div class="bag_focus"></div>
+		<div class="close_bag"></div>
+		<div class="bag">
+				<div class="bag_heading">Shopping Bag</div>
+		</div>
+
+		<script >
+			
+			$('.bagicon').click(function(){
+				$('.bag_focus').toggleClass('bag_focus--on');
+				$('.bag').toggleClass('bag--open');
+				$('.close_bag').toggleClass('close_bag--on');
+			});
+		
+
+			$('.bag_focus').click(function(){
+				$('.bag_focus').removeClass('bag_focus--on');
+				$('.bag').removeClass('bag--open');
+				$('.close_bag').removeClass('close_bag--on');
+			});
+
+			$('.close_bag').click(function(){
+				$('.bag_focus').removeClass('bag_focus--on');
+				$('.bag').removeClass('bag--open');
+				$('.close_bag').removeClass('close_bag--on');
+			});
+
+
+		</script>
 	</header>
 
 

@@ -216,7 +216,7 @@ span#accounticon{
 
 
 
-span#bagicon{
+span.bagicon{
 	display: block;
 	width: auto;
 	margin: 0;
@@ -225,10 +225,103 @@ span#bagicon{
 	right: 15px;
 	position: absolute;
 }
-#bagicon img{
+.bagicon img{
 	width: 22px;
 }
 
+.bagicon:hover{
+	cursor: pointer;
+}
+
+
+.bag_focus{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 800;
+	background-color: rgba(0,0,0,0.2);
+	display: none;
+	opacity: 0;
+	transition: all ease-in-out 250ms;
+}
+
+.bag_focus--on{
+	display: block;
+	opacity: 100;
+}
+
+
+.bag{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #F5F5F5;
+	height: 100vh;
+	width: 0;
+	overflow: hidden;
+	z-index: 900;
+	transition: all ease-in-out 250ms;
+}
+
+.bag--open{
+	width: 250px;
+}
+
+.close_bag{
+	content: '';
+	position: absolute;
+	right: 0;
+	display: none;
+	top: 50vh;
+	z-index: 899;
+}
+
+.close_bag::before,.close_bag::after{
+	content: '';
+	display: block;
+	width: 3em;
+	height: 0.5em;
+	background-color: black;
+	border-radius: 10px;
+}
+
+
+.close_bag--on{
+	display: block;
+	right: 260px;
+
+}
+.close_bag--on::before{
+	transform: rotate(135deg);
+}
+
+.close_bag--on::after{
+	transform: translateY(-0.52em) translateX(-0.09em) rotate(-135deg);
+}
+
+
+
+
+.bag_heading{
+	width: 100%;
+	text-align: center;
+	padding-top: 15px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.bag_heading::after{
+	content: '';
+	width: 85%;
+	background-color: grey;
+	height: 1px;
+	margin: 15px auto;
+	display: block;
+
+}
 /*Header over======================================================================================*/
 
 
@@ -346,7 +439,7 @@ span#bagicon{
 		width: 30px;
 	}
 
-	span#bagicon{
+	span.bagicon{
 		display: inline-block;
 		width: auto;
 		margin: 0;
@@ -354,7 +447,7 @@ span#bagicon{
 		right: 15px;
 	}
 
-	#bagicon img{
+	.bagicon img{
 		width: 30px;
 	}
 
