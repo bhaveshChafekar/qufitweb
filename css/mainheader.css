@@ -268,7 +268,7 @@ span.bagicon{
 }
 
 .bag--open{
-	width: 250px;
+	width: 80vw;
 }
 
 .close_bag{
@@ -292,7 +292,7 @@ span.bagicon{
 
 .close_bag--on{
 	display: block;
-	right: 260px;
+	right: 83vw;
 
 }
 .close_bag--on::before{
