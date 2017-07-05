@@ -1,0 +1,53 @@
+body{	
+	background: url(img/background.jpeg);
+	align-content: center;
+}
+.container{
+	text-align: center;
+	width: 10%;
+  	margin:auto;
+  	overflow:hidden;	
+  	font-weight: bold;
+}
+#headerflex{
+	display: flex;
+	width: 100%;
+}
+
+#logo {
+	font-size: xx-large;
+	color: #34495E;
+	margin: 0;
+	font-family: 'Cabin Sketch', cursive;
+}
+
+header {
+	padding: 0;
+	margin: 0;
+	height: 100px;
+}
+
+#form{
+	padding-left: 335px;
+	width: 50%;
+}
+
+#form input{
+	font-size: large;
+	font-stretch: expanded;
+	font-weight: bold;
+	padding-left: 10px;
+  	height:34px;
+  	width:50%;
+  	opacity: 0.6;
+
+}
+#form button{
+	border: 0;
+	background: #34495E;
+  	height:36px;
+  	width:40%;
+  	color: white;
+  	font-weight: bold;
+  	font-size: large;
+}

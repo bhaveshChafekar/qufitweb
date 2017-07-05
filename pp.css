@@ -1,0 +1,14 @@
+.logo{
+	width: 75%;
+	background: cyan;
+	text-align: center;
+	flex-wrap: nowrap;
+	font-size: xx-large;
+	align-content: center;
+	float: left;
+}
+.gg{
+	width: 25%;
+	background: yellow;
+	float: right;
+}

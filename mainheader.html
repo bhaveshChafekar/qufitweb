@@ -29,10 +29,19 @@
 				</form>
 			</span>	
 
-			<span id="accounticon"><img src="img/accounticon.png"></span>
+			<span id="accounticon">
+				<img src="img/accounticon.png">
+			</span>
 			<span class="bagicon"><img src="img/bagicon.png"></span>	
 			
 		</div>
+
+
+		<span class="account_options">
+			<a href="#">wishlist</a>
+			<a href="#">my orders</a>
+			<a href="#">login</a>
+		</span>
 
 		<div class="bag_focus"></div>
 		<div class="close_bag"></div>
@@ -41,6 +50,10 @@
 		</div>
 
 		<script >
+
+			$('#accounticon').hover(function(){
+				$('.account_options').toggleClass('account_options--on');
+			});
 			
 			$('.bagicon').click(function(){
 				$('.bag_focus').toggleClass('bag_focus--on');
