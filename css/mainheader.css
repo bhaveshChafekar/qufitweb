@@ -203,18 +203,59 @@ span#accounticon{
 	width: auto;
 	margin: 0;
 	padding: 5px 0 0px 0px;
-	text-align: right;
 	height: 50%;
 	position: absolute;
 	right: 52px;
 
 }
+
+
+#accounticon::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 5px;
+	margin: 3px 0 0 0;
+	padding: 5px 0 0px 0;
+	position: absolute;
+	background-color: black;
+}
+
 #accounticon img{
 	width: 23px;
 	padding-left: 0px ;
 }
 
+span#accounticon:hover{
+	cursor: pointer;
+}
 
+
+span#accounticon:hover::after{
+	width: 100%;
+}
+
+
+
+
+.account_options{
+	position: absolute;
+	width: 100vw;
+	height: 50vh;
+	background: white;
+	margin: 0px 0 0 0;
+	left: 0;
+	top: 45px;
+	font-size: 40px;
+	text-align: center;
+	z-index: 100;
+	border:2px black solid;
+	display: none;
+}
+
+.account_options--on{
+	display: block;
+}
 
 span.bagicon{
 	display: block;
@@ -269,6 +310,7 @@ span.bagicon{
 
 .bag--open{
 	width: 80vw;
+	max-width: 400px;
 }
 
 .close_bag{
@@ -451,4 +493,13 @@ span.bagicon{
 		width: 30px;
 	}
 
+
+
+}
+
+
+@media(min-width: 760px){
+	.close_bag--on{
+		right: 415px;
+	}
 }
